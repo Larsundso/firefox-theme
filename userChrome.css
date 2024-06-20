@@ -1,4 +1,3 @@
-
 /* Import theme */
 @import "theme/gnome-theme.css";
 
@@ -7,3 +6,30 @@
  * default) will be included here and preserved between updates. 
  * You can apply your own custom styles in that file. */
 @import "customChrome.css"; /**/
+
+#TabsToolbar {
+ display: none;
+}
+
+:root[tabsintitlebar] #titlebar .titlebar-button,
+:root[tabsintitlebar][inFullscreen] #window-controls toolbarbutton {
+ display: none !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-close,
+:root[tabsintitlebar] #titlebar #titlebar-close {
+ display: none !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-max,
+:root[tabsintitlebar] #titlebar #titlebar-max {
+ display: none !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-restore {
+ display: none !important;
+}
+:root[tabsintitlebar] #titlebar .titlebar-buttonbox .titlebar-min,
+:root[tabsintitlebar] #titlebar #titlebar-min {
+ display: none !important;
+}
+:root[tabsintitlebar][inFullscreen] #window-controls #restore-button {
+ display: none !important;
+}
